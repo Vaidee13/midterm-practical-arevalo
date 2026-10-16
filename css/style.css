@@ -1,0 +1,158 @@
+
+:root {
+    --color-background: #212121;
+    --color-text: #222222;
+    --color-surface: #ffffff;
+    --color-accent: #805500;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--color-text);
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+    color: var(--color-background);
+    text-decoration: underline;
+}
+
+/* =========================
+   PROFILE IMAGE
+   ========================= */
+
+img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: var(--space-medium);
+}
+
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+section {
+    background-color: var(--color-surface);
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+h1,
+h2 {
+    color: var(--color-accent);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    font-weight: bold;
+    padding: 10px;
+}
+
+th,
+td {
+    border: 1px solid #777777;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #eeeeee;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid #555555;
+    border-radius: 5px;
+    font: inherit;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+button {
+    padding: 12px;
+    background-color: var(--color-text);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font: inherit;
+}
+
+button:hover,
+button:focus {
+    background-color: var(--color-accent);
+}
+
+footer {
+    background-color: var(--color-text);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 600px) {
+    nav {
+        gap: 15px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    section {
+        padding: 18px;
+    }
+}
